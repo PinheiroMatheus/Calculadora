@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+    
+    <title>Cronômetro</title>
+</head>
+<body>
+    <div id="container">
+        <div id="title">
+            <span>Hora</span>
+            <span>:</span>
+            <span>Minuto</span>
+            <span>:</span>
+            <span>Segundo</span>
+            <span>:</span>
+            <span>Milissegundo</span>
+        </div>
+        <div id="timer">
+            <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="milliseconds">000</span> 
+        </div>
+        <div id="controls">
+            <button type="submit" name="start" class="start" onclick=start()>Iniciar</button>
+            <button type="submit" name="pause" class="pause" id="disabled" onclick=pause()>Pausar</button>
+            <button type="reset" name="reset" class="reset" id="disabled" onclick=reset()>Reiniciar</button>
+        </div>
+    </div>
+</body>
+</html>
